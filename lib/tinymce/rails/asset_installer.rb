@@ -54,7 +54,7 @@ module TinyMCE
         src = File.join(@target, src)
         dest = File.join(@target, dest)
         
-        FileUtils.mv(src, dest, :force => true) if src != dest && File.exists?(src)
+        FileUtils.mv(src, dest, :force => true) if src != dest && File.exist?(src)
       end
       
       def index_asset?(asset)

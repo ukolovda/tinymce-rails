@@ -48,7 +48,7 @@ module TinyMCE::Rails
       end
       
       it "returns true if the file no longer exists" do
-        File.stub(:exists?).and_return(false)
+        File.stub(:exist?).and_return(false)
         file.should be_changed
       end
       
